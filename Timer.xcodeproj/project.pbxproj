@@ -17,6 +17,7 @@
 		80CA19672AAE0D2E0010D497 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA19662AAE0D2E0010D497 /* TimerViewModel.swift */; };
 		80CA19692AAE1B690010D497 /* Timer15View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA19682AAE1B690010D497 /* Timer15View.swift */; };
 		80CA196B2AAE1D840010D497 /* Timer30View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA196A2AAE1D840010D497 /* Timer30View.swift */; };
+		80CA196D2AAE24180010D497 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA196C2AAE24180010D497 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		80CA19662AAE0D2E0010D497 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		80CA19682AAE1B690010D497 /* Timer15View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer15View.swift; sourceTree = "<group>"; };
 		80CA196A2AAE1D840010D497 /* Timer30View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer30View.swift; sourceTree = "<group>"; };
+		80CA196C2AAE24180010D497 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				80CA19662AAE0D2E0010D497 /* TimerViewModel.swift */,
 				80CA19682AAE1B690010D497 /* Timer15View.swift */,
 				80CA196A2AAE1D840010D497 /* Timer30View.swift */,
+				80CA196C2AAE24180010D497 /* TabBarView.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				80CA196B2AAE1D840010D497 /* Timer30View.swift in Sources */,
 				80CA19672AAE0D2E0010D497 /* TimerViewModel.swift in Sources */,
 				80CA19692AAE1B690010D497 /* Timer15View.swift in Sources */,
+				80CA196D2AAE24180010D497 /* TabBarView.swift in Sources */,
 				80CA193D2AAE07D80010D497 /* TimerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
