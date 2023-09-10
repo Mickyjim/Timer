@@ -104,12 +104,10 @@
 			children = (
 				80CA193C2AAE07D80010D497 /* TimerApp.swift */,
 				80CA193E2AAE07D80010D497 /* ContentView.swift */,
+				80CA196F2AAE44610010D497 /* ViewModel */,
+				80CA196E2AAE44590010D497 /* Views */,
 				80CA19402AAE07D90010D497 /* Assets.xcassets */,
 				80CA19422AAE07D90010D497 /* Preview Content */,
-				80CA19662AAE0D2E0010D497 /* TimerViewModel.swift */,
-				80CA19682AAE1B690010D497 /* Timer15View.swift */,
-				80CA196A2AAE1D840010D497 /* Timer30View.swift */,
-				80CA196C2AAE24180010D497 /* TabBarView.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -137,6 +135,24 @@
 				80CA19592AAE07D90010D497 /* TimerUITestsLaunchTests.swift */,
 			);
 			path = TimerUITests;
+			sourceTree = "<group>";
+		};
+		80CA196E2AAE44590010D497 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80CA19682AAE1B690010D497 /* Timer15View.swift */,
+				80CA196A2AAE1D840010D497 /* Timer30View.swift */,
+				80CA196C2AAE24180010D497 /* TabBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80CA196F2AAE44610010D497 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				80CA19662AAE0D2E0010D497 /* TimerViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TimerView30: View {
+    
     @StateObject private var viewModel = TimerViewModel(initialSeconds: 30)
 
     var body: some View {
@@ -31,7 +32,6 @@ struct TimerView30: View {
                     .font(.largeTitle)
                     .foregroundColor(Color.orange)
             }
-                
         }
         .padding()
     }

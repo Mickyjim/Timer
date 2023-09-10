@@ -9,7 +9,9 @@ import Foundation
 import SwiftUI
 
 class TimerViewModel: ObservableObject {
+    
     @Published var remainingSeconds: Int
+    
     private var timer: Timer?
     
     init(initialSeconds: Int) {
@@ -17,7 +19,7 @@ class TimerViewModel: ObservableObject {
     }
 
     func start() {
-        guard timer == nil else { return } // Ensure the timer is not already running
+        guard timer == nil else { return }
         
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             guard let self = self else { return }
@@ -25,7 +27,6 @@ class TimerViewModel: ObservableObject {
             if self.remainingSeconds > 0 {
                 self.remainingSeconds -= 1
             } else {
-                // Timer is up, handle this scenario (e.g., display "Time is up")
                 self.timer?.invalidate()
             }
         }
