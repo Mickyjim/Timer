@@ -1,2 +1,2 @@
 # Timer
-Simple app that shows two timers. TDD and SOLID practice
+Simple app that shows two timers for testing purposes.
