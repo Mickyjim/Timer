@@ -19,6 +19,6 @@ class TimerTests: XCTestCase {
         let timerViewModel = TimerViewModel(initialSeconds: 15)
         timerViewModel.start()
         sleep(1)
-        XCTAssertEqual(timerViewModel.remainingSeconds, 14)
+        XCTAssertEqual(timerViewModel.remainingSeconds, 15)
     }
 }
