@@ -1,5 +1,5 @@
 //
-//  Timer15View.swift
+//  Timer30View.swift
 //  Timer
 //
 //  Created by Michael Favre on 10/09/2023.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct TimerView15: View {
-    @StateObject private var viewModel = TimerViewModel(initialSeconds: 15)
+struct TimerView30: View {
+    @StateObject private var viewModel = TimerViewModel(initialSeconds: 30)
 
     var body: some View {
         VStack(spacing: 20) {
-            Text("15 Secs")
+            Text("30 Secs")
                 .font(.largeTitle)
                 .fontWeight(.bold)
             
@@ -31,13 +31,14 @@ struct TimerView15: View {
                     .font(.largeTitle)
                     .foregroundColor(Color.orange)
             }
+                
         }
         .padding()
     }
 }
 
-struct TimerView15_Previews: PreviewProvider {
+struct TimerView30_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView15()
+        TimerView30()
     }
 }

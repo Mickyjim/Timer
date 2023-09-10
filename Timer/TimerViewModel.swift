@@ -6,30 +6,28 @@
 //
 
 import Foundation
+import SwiftUI
 
-class TimerViewModel {
-    var initialSeconds: Int
-    var remainingSeconds: Int
+class TimerViewModel: ObservableObject {
+    @Published var remainingSeconds: Int
     private var timer: Timer?
-
+    
     init(initialSeconds: Int) {
-        self.initialSeconds = initialSeconds
         self.remainingSeconds = initialSeconds
     }
-    
+
     func start() {
-        if timer == nil {
-            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
-                guard let self = self else { return }
-                
-                if self.remainingSeconds > 0 {
-                    self.remainingSeconds -= 1
-                } else {
-                    self.timer?.invalidate()
-                }
+        guard timer == nil else { return } // Ensure the timer is not already running
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
+            guard let self = self else { return }
+            
+            if self.remainingSeconds > 0 {
+                self.remainingSeconds -= 1
+            } else {
+                // Timer is up, handle this scenario (e.g., display "Time is up")
+                self.timer?.invalidate()
             }
-            RunLoop.main.add(timer!, forMode: .common)
         }
     }
 }
-
