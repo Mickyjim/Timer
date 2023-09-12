@@ -14,8 +14,6 @@
 		80CA19412AAE07D90010D497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CA19402AAE07D90010D497 /* Assets.xcassets */; };
 		80CA19442AAE07D90010D497 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CA19432AAE07D90010D497 /* Preview Assets.xcassets */; };
 		80CA194E2AAE07D90010D497 /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA194D2AAE07D90010D497 /* TimerTests.swift */; };
-		80CA19582AAE07D90010D497 /* TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA19572AAE07D90010D497 /* TimerUITests.swift */; };
-		80CA195A2AAE07D90010D497 /* TimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA19592AAE07D90010D497 /* TimerUITestsLaunchTests.swift */; };
 		80CA19672AAE0D2E0010D497 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA19662AAE0D2E0010D497 /* TimerViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,8 +45,6 @@
 		80CA19492AAE07D90010D497 /* TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CA194D2AAE07D90010D497 /* TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTests.swift; sourceTree = "<group>"; };
 		80CA19532AAE07D90010D497 /* TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		80CA19572AAE07D90010D497 /* TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUITests.swift; sourceTree = "<group>"; };
-		80CA19592AAE07D90010D497 /* TimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		80CA19662AAE0D2E0010D497 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,12 +73,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		804FDEF82AB08AF100325450 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				804FDEF42AB089DF00325450 /* TimerUIComposer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		80CA19302AAE07D80010D497 = {
 			isa = PBXGroup;
 			children = (
 				80CA193B2AAE07D80010D497 /* Timer */,
 				80CA194C2AAE07D90010D497 /* TimerTests */,
-				80CA19562AAE07D90010D497 /* TimerUITests */,
 				80CA193A2AAE07D80010D497 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,7 +105,7 @@
 			children = (
 				80CA193C2AAE07D80010D497 /* TimerApp.swift */,
 				80CA193E2AAE07D80010D497 /* ContentView.swift */,
-				804FDEF42AB089DF00325450 /* TimerUIComposer.swift */,
+				804FDEF82AB08AF100325450 /* Model */,
 				80CA196F2AAE44610010D497 /* ViewModel */,
 				80CA196E2AAE44590010D497 /* Views */,
 				80CA19402AAE07D90010D497 /* Assets.xcassets */,
@@ -125,15 +128,6 @@
 				80CA194D2AAE07D90010D497 /* TimerTests.swift */,
 			);
 			path = TimerTests;
-			sourceTree = "<group>";
-		};
-		80CA19562AAE07D90010D497 /* TimerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				80CA19572AAE07D90010D497 /* TimerUITests.swift */,
-				80CA19592AAE07D90010D497 /* TimerUITestsLaunchTests.swift */,
-			);
-			path = TimerUITests;
 			sourceTree = "<group>";
 		};
 		80CA196E2AAE44590010D497 /* Views */ = {
@@ -302,8 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80CA195A2AAE07D90010D497 /* TimerUITestsLaunchTests.swift in Sources */,
-				80CA19582AAE07D90010D497 /* TimerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
