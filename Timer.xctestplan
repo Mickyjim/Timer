@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "CF81BD15-0D54-43D5-BC5E-A708B93656DC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Timer.xcodeproj",
+      "identifier" : "80CA19382AAE07D80010D497",
+      "name" : "Timer"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Timer.xcodeproj",
+        "identifier" : "80CA19482AAE07D90010D497",
+        "name" : "TimerTests"
+      }
+    }
+  ],
+  "version" : 1
+}
