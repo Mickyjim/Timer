@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		804FDEF52AB089DF00325450 /* TimerUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804FDEF42AB089DF00325450 /* TimerUIComposer.swift */; };
 		80CA193D2AAE07D80010D497 /* TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA193C2AAE07D80010D497 /* TimerApp.swift */; };
 		80CA193F2AAE07D80010D497 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA193E2AAE07D80010D497 /* ContentView.swift */; };
 		80CA19412AAE07D90010D497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CA19402AAE07D90010D497 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		804FDEF42AB089DF00325450 /* TimerUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUIComposer.swift; sourceTree = "<group>"; };
 		80CA19392AAE07D80010D497 /* Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CA193C2AAE07D80010D497 /* TimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerApp.swift; sourceTree = "<group>"; };
 		80CA193E2AAE07D80010D497 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		80CA196F2AAE44610010D497 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				804FDEF42AB089DF00325450 /* TimerUIComposer.swift */,
 				80CA19662AAE0D2E0010D497 /* TimerViewModel.swift */,
 			);
 			path = ViewModel;
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80CA193F2AAE07D80010D497 /* ContentView.swift in Sources */,
+				804FDEF52AB089DF00325450 /* TimerUIComposer.swift in Sources */,
 				80CA196B2AAE1D840010D497 /* Timer30View.swift in Sources */,
 				80CA19672AAE0D2E0010D497 /* TimerViewModel.swift in Sources */,
 				80CA19692AAE1B690010D497 /* Timer15View.swift in Sources */,
