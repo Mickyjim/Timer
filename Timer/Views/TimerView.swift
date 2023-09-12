@@ -1,33 +1,34 @@
 //
-//  Timer30View.swift
+//  TimerView.swift
 //  Timer
 //
-//  Created by Michael Favre on 10/09/2023.
+//  Created by Michael Favre on 12/09/2023.
 //
 
 import SwiftUI
 
-struct TimerView30: View {
-    
-    @StateObject private var viewModel = TimerViewModel(initialSeconds: 30)
+struct TimerView: View {
+
+    let totalTime: String
+    let remainingTime: String
+    let isTimerOver: Bool
+    let action: () -> Void
 
     var body: some View {
         VStack(spacing: 20) {
-            Text("30 Secs")
+            Text(totalTime)
                 .font(.largeTitle)
                 .fontWeight(.bold)
             
-            Text("Remaining Time: \(viewModel.remainingSeconds)")
+            Text("Remaining Time: \(remainingTime)")
                 .font(.title)
             
-            if viewModel.remainingSeconds == 0 {
+            if isTimerOver {
                 Text("Time is up!")
                     .font(.title)
             }
             
-            Button(action: {
-                viewModel.start()
-            }) {
+            Button(action: action) {
                 Image(systemName: "play.fill")
                     .font(.largeTitle)
                     .foregroundColor(Color.orange)
@@ -37,8 +38,8 @@ struct TimerView30: View {
     }
 }
 
-struct TimerView30_Previews: PreviewProvider {
+struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView30()
+        TimerView(totalTime: "30 Secs", remainingTime: "00:10", isTimerOver: false, action: {})
     }
 }
