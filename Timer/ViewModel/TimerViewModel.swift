@@ -29,7 +29,7 @@ class TimerViewModel: ObservableObject {
     
     @Published var remainingSeconds: Int
     
-    private var timer: Timerable?
+    var timer: Timerable?
     private var timerProvider: () -> Timerable
     
     init(initialSeconds: Int, timerProvider: @escaping () -> Timerable = Timer.init) {
